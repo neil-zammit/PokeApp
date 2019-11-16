@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Navbar  */
+
+.nav-container {
+  background-color: #da2d2d;
+  padding: 1rem;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+}
+
+.logo {
+  margin-right: 80%;
+  font-size: 1.3rem;
+}
+
+span {
+  color: #f6da63;
+}
+
+.nav-item:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.content-container {
+  margin: 2rem 4rem;
+}
+
+.content {
+  margin-left: 1rem;
+}
+
+.api-site {
+  color: #da2d2d;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

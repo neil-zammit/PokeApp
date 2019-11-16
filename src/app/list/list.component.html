@@ -1,0 +1,19 @@
+<div class="content-container">
+  <div class="content-header">
+    <h1>Poké List</h1>
+  </div>
+  <div class="content">
+    <p>
+      An Angular app that fetches data from the
+      <a href="https://pokeapi.co/" class="api-site">PokéAPI</a>
+    </p>
+    <p>The first {{ pokecount }} pokemon in the list:</p>
+    <!-- if pokelist not empty  -->
+    <ul *ngIf="pokelist">
+      <!-- render each element in pokelist between li tags -->
+      <li *ngFor="let pokemon of pokelist">
+        {{ pokemon }}
+      </li>
+    </ul>
+  </div>
+</div>
