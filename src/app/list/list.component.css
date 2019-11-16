@@ -1,0 +1,30 @@
+.pokelist-container {
+  margin-top: 2rem;
+  border: 1px solid #dfddc7;
+  background-color: #dfddc7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  /* flex-wrap: wrap so that list items remain within container  */
+  flex-wrap: wrap;
+}
+
+li {
+  border: 1px solid #da2d2d;
+  background-color: #da2d2d;
+  color: #fff;
+  border-radius: 5px;
+  width: 200px;
+  padding: 2rem;
+  margin: 2rem;
+  transition: all 0.3s;
+}
+
+li:hover {
+  font-size: 2rem;
+  color: #f6da63;
+}

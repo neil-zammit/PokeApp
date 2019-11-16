@@ -10,7 +10,7 @@ export class HttpService {
 
   constructor(private http: HttpClient) {}
 
-  getPokemon() {
+  getPokemonName() {
     this.counter++;
     // Return pokemon at index counter
     return this.http.get(`https://pokeapi.co/api/v2/pokemon/${this.counter}`);

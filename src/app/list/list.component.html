@@ -10,12 +10,14 @@
     <p>How many pokemon do you want to get?</p>
     <input type="text" [(ngModel)]="pokecount" />
     <button (click)="getPokeList()">Get Pokemon</button>
-    <!-- if pokelist not empty  -->
-    <ul *ngIf="pokelist">
-      <!-- render each element in pokelist between li tags -->
-      <li *ngFor="let pokemon of pokelist">
-        {{ pokemon }}
-      </li>
-    </ul>
+    <div class="pokelist-container">
+      <!-- if pokelist not empty  -->
+      <ul *ngIf="pokelist">
+        <!-- render each element in pokelist between li tags -->
+        <li *ngFor="let pokemon of pokelist">
+          {{ pokemon }}
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

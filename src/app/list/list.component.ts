@@ -8,7 +8,7 @@ import { HttpService } from '../http.service';
 })
 export class ListComponent implements OnInit {
   // Implement form where user enters how much pokemon will be retrieved
-  pokecount = 5;
+  pokecount = 8;
 
   // class property to hold results
   pokelist = [];
@@ -20,7 +20,7 @@ export class ListComponent implements OnInit {
     // Loop for pokecount times
     for (let i = 0; i < this.pokecount; i++) {
       // Get data from Api
-      this.http.getPokemon().subscribe(data => {
+      this.http.getPokemonName().subscribe(data => {
         // Push pokemon name from PokeApi db to pokelist array
         this.pokelist.push(data.name);
       });
@@ -37,7 +37,7 @@ export class ListComponent implements OnInit {
     for (let i = 0; i < this.pokecount; i++) {
       console.log(this.pokecount);
       // Get data from Api
-      this.http.getPokemon().subscribe(data => {
+      this.http.getPokemonName().subscribe(data => {
         // Push pokemon name from PokeApi db to pokelist array
         this.pokelist.push(data.name);
       });
