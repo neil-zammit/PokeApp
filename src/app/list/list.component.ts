@@ -28,7 +28,6 @@ export class ListComponent implements OnInit {
     console.log(this.pokelist);
   }
 
-  // Fix this method
   getPokeList() {
     // Clear pokelist
     this.pokelist = [];
